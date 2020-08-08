@@ -21,5 +21,4 @@ public class PositionIterator implements Iterator<Position> {
         current = new Position(current.row + rowIncrement , current.column + colIncrement);
         return current;
     }
-    //nothing much
 }

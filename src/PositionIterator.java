@@ -3,7 +3,6 @@ import java.util.Iterator;
 public class PositionIterator implements Iterator<Position> {
     private int rowIncrement , colIncrement, size;
     private  Position current;
-    //have a look
     public PositionIterator(Position p,int rowIncrement, int colIncrement, int size) {
         this.rowIncrement = rowIncrement;
         this.colIncrement = colIncrement;
@@ -22,4 +21,5 @@ public class PositionIterator implements Iterator<Position> {
         current = new Position(current.row + rowIncrement , current.column + colIncrement);
         return current;
     }
+    //nothing much
 }
